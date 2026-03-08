@@ -8,6 +8,8 @@ def plot_costs(costs, learning_rate):
     plt.ylabel("costs")
     plt.xlabel("iterations (per hundreds)")
     plt.title(f"Learning rate = {learning_rate}")
+
+    plt.savefig("assets/training_loss.png")
     plt.show()
 
 def preprocess_image(image_path, num_px=64):

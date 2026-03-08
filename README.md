@@ -35,3 +35,35 @@ deep-neural-network-from-scratch/
 ├── images/
 ├── src/
 └── tests/
+
+## Model Architecture
+
+The neural network follows a fully connected architecture:
+
+    Input (12288)
+      ↓
+    Dense (20) + ReLU
+       ↓
+    Dense (7) + ReLU
+     ↓
+    Dense (5) + ReLU
+      ↓
+    Dense (1) + Sigmoid
+
+The final sigmoid layer outputs the probability that an image contains a cat.
+
+---
+
+## Training Loss
+
+The model was trained using gradient descent with binary cross-entropy loss.
+
+![Training Loss](assets/training_loss.png)
+
+---
+
+## Example Prediction
+
+Below is an example of the model predicting a custom image.
+
+![Prediction Example](assets/example_prediction.png)
