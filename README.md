@@ -35,6 +35,7 @@ deep-neural-network-from-scratch/
 ├── images/
 ├── src/
 └── tests/
+```
 
 ## Model Architecture
 
